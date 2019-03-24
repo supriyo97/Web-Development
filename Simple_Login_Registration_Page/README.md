@@ -1,6 +1,6 @@
-#LogIn/Reg Form
+# LogIn/Reg Form
 
-I'm creating a Registration and Login form with all the posible validation,styling using HTML,CSS,#PHP and #MYSQL(Database).
+I'm creating a Registration and Login form with all the posible validation,styling using # HTML,# CSS,# PHP and # MYSQL(Database).
 
 Here I'm using Email varification to activate the new users account.
 
