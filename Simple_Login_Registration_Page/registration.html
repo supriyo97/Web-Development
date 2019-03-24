@@ -5,25 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
     <title>Sign Up</title>
 </head>
 <body>
     <div class="container">
         <div class="icon">
             <img src="Images/login(3).png" alt="">
-            <p>Login Using Existing Account</p>
+            <p>Already Have an Account?<a href="login.html">Sign In</a></p>
         </div>
+        <div><p class="Or">Or Use</p></div>
         <div class="social">
             <img src="Images/github.png" alt="">
             <img src="Images/google.png" alt="">
             <img src="Images/facebook.png" alt="">
         </div>
         <form action="" method="post">
-            <input type="text">Username
-            <input type="email">Email
-            <input type="number">Mobile No.
-            <input type="password">Password
-            <input type="password">Confirm Password
+            <div class="signup"><p>SIGN UP</p></div>
+
+            <div>
+                <input type="text" required>
+            <label for="">Username</label>
+            </div>
+            
+            <div>
+                <input type="email" required>
+                <label for="">Email</label>
+            </div> 
+            
+            <div>
+                <input type="number" required>
+                <label for="">Mobile No.</label> 
+            </div>
+
+            <div>
+            <input type="password" required>
+            <label for="">Password</label> 
+            </div>
+
+            <div>
+            <input type="password" required>
+            <label for="">Confirm Password</label> 
+            </div>
             <input type="submit" value="Create Account &rarr;">
         </form>
     </div>

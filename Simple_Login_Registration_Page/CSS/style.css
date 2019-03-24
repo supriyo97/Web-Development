@@ -2,13 +2,14 @@ body{
     margin: 0;
     padding: 0;
     background-color: black;
-    font-style: sans-serif,Arial;
+    font-family: 'Raleway',Arial,'Times New Roman','sans-serif';
 }
 
 .container{
     width: 850px;
     height: 500px;
     position: absolute;
+    box-shadow: 0px 5px 10px rgb(0,0,0,.2);
     top: 50%;
     left: 50%;
     background-color: white;
@@ -33,6 +34,23 @@ body{
 
 .icon p{
     top: 60%;
+    left: 20%;
+    color: rgb(255, 208, 0);
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.icon a{
+    text-decoration: none;
+    color: #373272;
+}
+
+.icon a:hover{
+    color: #19164b;
+}
+
+.Or{
+    top:65%;
     left: 20%;
     color: rgb(255, 208, 0);
     position: absolute;
@@ -64,10 +82,75 @@ form{
     left: 70%;
     transform: translate(-50%,-50%);
     width: 350px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-form input{
+.signup {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    
+}
+
+.container input{
     width: 100%;
     height: 50%;
+    padding: 5px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid #999;
+    transition: all .5s;
+    
+}
+
+.container input[type="submit"]{
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    background: linear-gradient(to right, #08CCFD, rgb(89, 0, 255));
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.container input[type="submit"]:hover{
+    background: linear-gradient(to right, rgb(0, 223, 252), rgb(78, 8, 207));
+    cursor: pointer;
+}
+
+.container form div{
+    position: relative;
+}
+
+.container form div label{
+    position: absolute;
+    top: 3px;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.container input:focus ~label,
+.container input:valid ~label
+{   left: 0;
+    top: -20px;
+    color: #24c6dc;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container input:focus input:not([type="submit"]),
+.container input:valid input:not([type="submit"])
+{
+    border-bottom: 2px solid #e7e446;
 }
