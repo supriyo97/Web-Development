@@ -1,27 +1,40 @@
+<?php require_once("index.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Login</title>
+    <link rel="stylesheet" href="Include/CSS/Styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
+    <title>Sign Up</title>
 </head>
 <body>
-    <h2>LogIn</h2>
-    <hr>
-    <form class="container" action="login.php">
-        <div class="uname">
-            <label for="Username">Username</label>
-            <input type="text" id="Username" value="uname" name="uname" placeholder="Enter your username">
+    <div class="container">
+        <div class="icon">
+            <img src="Images/login(3).png" alt="">
+            <p> Or LogIn With</p>
         </div>
-        <div class="upass">
-            <label for="Password">Password</label>
-            <input type="password" id="Password" value="upass" name="upass" placeholder="Enter your password">
+        <div class="social">
+            <img src="Images/github.png" alt="">
+            <img src="Images/google.png" alt="">
+            <img src="Images/facebook.png" alt="">
         </div>
-        <input class="sub-btn" type="submit" name="submit" value="submit">
+        <form action="login.php" method="post">
+            <div class="signup"><p>SIGN IN</p></div>
 
-        
-    </form>
+            <div>
+                <input type="text" required>
+            <label for="">Username</label>
+            </div>
+            
+            <div>
+            <input type="password" required>
+            <label for="">Password</label> 
+            </div>
+
+            <input type="submit" value="Log In &rarr;">
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="log.css">
+<form id="form" action="somefile.php">
+        <input
+            type="text"
+            class="invalid"
+            name="username"
+            placeholder="Username"
+            pattern="[a-z]{1,15}"
+            id="uname"
+            >
+</form>
+
+<script>
+
+    var input = document.getElementById("uname");
+    var form = document.getElementById("form");
+
+    var elem               = document.createElement('div');
+        elem.id            = 'notify';
+        elem.style.display = 'none';
+        form.appendChild(elem);
+
+    input.addEventListener('invalid', function(event){
+        event.preventDefault();
+        if ( ! event.target.validity.valid ) {
+            elem.textContent   = 'Username should only contain lowercase letters e.g. john';
+            elem.className     = 'error';
+            elem.style.display = 'block';
+    
+            input.className    = 'invalid animated shake';
+    }
+});
+    input.addEventListener('input', function(event){
+        if ( 'block' === elem.style.display ) {
+            input.className = '';
+            elem.style.display = 'none';
+        }
+    });
+
+
+</script>
